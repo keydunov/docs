@@ -22,6 +22,12 @@
             ]
           },
           {
+            "group": "Workbooks",
+            "pages": [
+              "workbooks/sharing"
+            ]
+          },
+          {
             "group": "Administration",
             "pages": [
               "administration/spaces"
