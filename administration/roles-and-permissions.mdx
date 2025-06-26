@@ -2,3 +2,58 @@
 title: "Roles & Permissions"
 description: "Understanding user roles and access control in Cube D3"
 ---
+
+Cube D3 implements a role-based access control system with three main user roles: Admin, Developer, and User. Each role has specific permissions and access levels designed to support different responsibilities within the platform.
+
+\<div style="position: relative; padding-bottom: 56.84210526315789%; height: 0;"\>\<iframe src="https://www.loom.com/embed/ef12c793e31046e3bc6f413892a02049?sid=196c6953-ef6f-4811-96ca-9df5cfc843e6" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"\>\</iframe\>\</div\>
+
+## Deployment Structure
+
+- Database connections are managed through Semantic Model Deployments
+- Multiple Semantic Model Deployments can exist under one account
+- Roles can be either global (across all deployments) or deployment-specific
+- Admin role is always global
+
+## Role Permissions
+
+### Admin Role
+
+- Has highest level of privileges
+- Can manage semantic models
+- Can manage other users
+- Has access to admin section
+- Full query capabilities
+
+### Developer Role
+
+- Can create and edit semantic models
+- Can execute SQL queries against data sources
+- Can create and edit workbooks
+- Can create and edit data apps
+- No access to admin settings
+
+### User Role
+
+- Can query semantic models
+- Can create and edit workbooks
+- Can create and edit data apps
+- Can execute Semantic SQL queries
+- Cannot make changes to semantic models
+- Cannot query source data directly
+
+## Future Implementation
+
+A Viewer role is planned for future implementation with the following capabilities:
+
+- Use Analytics Chat with ability to query Semantic Views and existing reports
+- View (read-only) access to shared data apps
+
+## Agent Permissions
+
+Agents are connected to Semantic Model Deployments and inherit the permission level of the user they are operating under.
+
+## Typical Usage Scenarios
+
+- Users: Typically data consumers and analysts
+- Developers: Usually data stewards and data engineers
+- Admin: Typically assigned to data engineers managing the entire Cube D3 instance
