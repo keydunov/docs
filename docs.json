@@ -10,7 +10,7 @@
   "banner": {
     "content": "🚀 Banner is live! [Learn more](mintlify.com)"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
         "groups": [
           {
@@ -50,17 +50,17 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://cubed3.mintlify.app/",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "href": "https://slack.cube.dev/",
           "icon": "slack"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://cube.dev/blog",
           "icon": "newspaper"
         }
       ]
