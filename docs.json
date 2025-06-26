@@ -8,8 +8,8 @@
     "dark": "#15803D"
   },
   "banner": {
-        "content": "🚀 Banner is live! [Learn more](mintlify.com)"
-      },
+    "content": "🚀 Banner is live! [Learn more](mintlify.com)"
+  },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
