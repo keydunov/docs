@@ -30,7 +30,8 @@
           {
             "group": "Administration",
             "pages": [
-              "administration/spaces"
+              "administration/user-attributes",
+              "administration/roles-and-permissions"
             ]
           },
           {
