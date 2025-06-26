@@ -4,8 +4,8 @@
   "name": "Mint Starter Kit",
   "colors": {
     "primary": "#7A77FF",
-    "light": "#4DD5FF",
-    "dark": "#15803D"
+    "light": "#E5E5EC",
+    "dark": "#0F0F23"
   },
   "banner": {
     "content": "🚀 Banner is live! [Learn more](mintlify.com)"
