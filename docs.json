@@ -28,13 +28,19 @@
               "administration/user-attributes",
               "administration/roles-and-permissions"
             ]
+          },
+          {
+            "group": "Embed",
+            "pages": [
+              "embed/get-started"
+            ]
           }
         ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://cubed3.mintlify.app/",
+          "anchor": "Cube Core Documentation",
+          "href": "https://cube.dev/docs",
           "icon": "book-open-cover"
         },
         {
