@@ -1,8 +1,7 @@
 ---
-title: 'Get started with Embed'
-description: Embed iframe or use API
+title: "Get started"
+description: "Embed iframe or use API"
 ---
-
 
 Cube D3 supports embedding the AI-powered chat interface directly into your applications via an iframe or API. This allows you to give users a guided, semantic-layer-aware data assistant—anywhere in your product or portal.
 
@@ -16,9 +15,9 @@ Cube D3 supports embedding the AI-powered chat interface directly into your appl
 
 To enable the embedding feature:
 
-* You must have **admin privileges** in your Cube instance.
-* Navigate to **Admin → Embed**.
-* Click **Enable Embedding**.
+- You must have **admin privileges** in your Cube instance.
+- Navigate to **Admin → Embed**.
+- Click **Enable Embedding**.
 
 Once enabled, you'll see a **secret key** that can be used to sign authentication tokens. You can also regenerate this secret at any time from the same page.
 
@@ -28,8 +27,8 @@ Once enabled, you'll see a **secret key** that can be used to sign authenticatio
 
 To use the embedded chat, you must generate a signed **Cube JWT** token using the secret from the Admin panel. This token must include:
 
-* `externalTenantId` – your app’s tenant or organization ID.
-* `userAttributes` – key-value pairs used for row-level security or personalization.
+- `externalTenantId` – your app’s tenant or organization ID.
+- `userAttributes` – key-value pairs used for row-level security or personalization.
 
 You can use our helper library `@cube/d3` to simplify token generation.
 
