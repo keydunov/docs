@@ -1,0 +1,77 @@
+---
+title: 'Get started with Embed'
+description: Embed iframe or use API
+---
+
+
+Cube D3 supports embedding the AI-powered chat interface directly into your applications via an iframe or API. This allows you to give users a guided, semantic-layer-aware data assistant—anywhere in your product or portal.
+
+> ⚠️ **Note:** Embedding is currently behind a feature flag. Please contact [support@cube.dev](mailto:support@cube.dev) to enable it for your workspace.
+
+---
+
+## **Getting Started with Embedding**
+
+### **1. Enable Embedding**
+
+To enable the embedding feature:
+
+* You must have **admin privileges** in your Cube instance.
+* Navigate to **Admin → Embed**.
+* Click **Enable Embedding**.
+
+Once enabled, you'll see a **secret key** that can be used to sign authentication tokens. You can also regenerate this secret at any time from the same page.
+
+---
+
+### **2. Authenticate with a Cube JWT**
+
+To use the embedded chat, you must generate a signed **Cube JWT** token using the secret from the Admin panel. This token must include:
+
+* `externalTenantId` – your app’s tenant or organization ID.
+* `userAttributes` – key-value pairs used for row-level security or personalization.
+
+You can use our helper library `@cube/d3` to simplify token generation.
+
+#### **Example (TypeScript)**
+
+```ts
+import { generateCubeJWT } from '@cube/d3';
+
+const token = generateCubeJWT({
+  secret: 'your-embed-secret',
+  externalTenantId: 'org_123',
+  userAttributes: {
+    role: 'viewer',
+    region: 'us-west',
+    email: 'user@example.com'
+  },
+  expiresIn: '1h'
+});
+
+// Pass this token to the iframe or API call
+```
+
+---
+
+### **3. Embedding via iframe**
+
+To embed the chat UI in your app, include an iframe pointing to your Cube instance, passing the Cube JWT token:
+
+```html
+<iframe
+  src="https://your-cube-instance.cubecloud.dev/embed/chat?token=YOUR_CUBE_JWT"
+></iframe>
+```
+
+---
+
+### **4. Using the Chat API (Optional)**
+
+Advanced users can interact directly with Cube D3 Chat via API for custom chat UI implementations. Documentation and SDK coming soon.
+
+---
+
+## **Need Help?**
+
+Reach out to [support@cube.dev](mailto:support@cube.dev) and we’ll help you get up and running with embedding Cube D3 Chat.
