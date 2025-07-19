@@ -52,6 +52,11 @@
           "anchor": "Blog",
           "href": "https://cube.dev/blog",
           "icon": "newspaper"
+        },
+        {
+          "anchor": "Changelog",
+          "href": "changelog",
+          "icon": "history"
         }
       ]
     }
